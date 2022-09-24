@@ -66,7 +66,7 @@ public class StepDefs extends AbstractSteps {
 		persons.forEach((p) -> {
 			personRepository.save(p);
 		});
-		guiTest();
+		//guiTest();
 	}
 
 	@When("I login with email {string} and password {string}")
