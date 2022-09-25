@@ -17,18 +17,18 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class SeleniumTest {
 
-	@Test
-	public void driverTest() {
-
-		chrome.getWebDriver().get("http://host.docker.internal:" + port + "/");
-
-		log.info("PAGE = " + chrome.getWebDriver().getTitle());
-	}
-
-	@Autowired
-	private DockerChromeWebDriver chrome;
-
-	@LocalServerPort
-	private int port;
+//	@Test
+//	public void driverTest() {
+//
+//		chrome.getWebDriver().get("http://host.docker.internal:" + port + "/");
+//
+//		log.info("PAGE = " + chrome.getWebDriver().getTitle());
+//	}
+//
+//	@Autowired
+//	private DockerChromeWebDriver chrome;
+//
+//	@LocalServerPort
+//	private int port;
 	
 }
