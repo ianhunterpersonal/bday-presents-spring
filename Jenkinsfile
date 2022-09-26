@@ -7,5 +7,12 @@ pipeline {
                sh 'mvn clean compile test'
             }
         }
+        stage('Building image') {
+		  steps{
+			script {
+				dockerImage = docker.build imagename
+			}
+		  }
+		}
     }
 }
