@@ -1,4 +1,11 @@
-pipeline { 
+pipeline {
+
+	environment {
+		imagename = "ianhunterpersonal/bday-gifts"
+		registryCredential = 'ianhunterpersonal_DockerHub'
+		dockerImage = ''
+	}
+
     agent any
     stages { 
         stage('Build') { 
@@ -11,8 +18,10 @@ pipeline {
 		  steps{
 			script {
 				dockerImage = docker.build imagename
+				echo "${dockerImage}"
 			}
 		  }
 		}
     }
+    
 }
