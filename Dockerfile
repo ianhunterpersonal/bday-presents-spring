@@ -1,5 +1,6 @@
 # For Java 11, try this
-FROM adoptopenjdk/openjdk11:alpine-jre
+#FROM adoptopenjdk/openjdk11:alpine-jre
+FROM arm64v8/openjdk:11
 
 # Refer to Maven build -> finalName
 ARG JAR_FILE=target/bday-presents-spring-0.0.1-SNAPSHOT.jar
